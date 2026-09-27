@@ -1,0 +1,2473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kapil Sewing Machine Co. | Premium Sewing Machines</title>
+
+  <meta name="description"
+        content="Kapil Sewing Machine Co. - Wholesale and retail sewing machines for tailors, boutiques, garment manufacturers and home users in Mumbai.">
+
+  <meta name="keywords"
+        content="sewing machine Mumbai, sewing machine Andheri, sewing machine Nallasopara, industrial sewing machine, TA1 sewing machine, Kapil sewing machine">
+
+  <meta name="theme-color" content="#111318">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kapil Sewing Machine Co.">
+  <meta property="og:description" content="Premium sewing machines for professionals and home users.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="cover-photo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="ksm-logo.jpeg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <style>
+
+    /* =========================
+       ROOT
+    ========================= */
+
+    :root {
+      --black: #111318;
+      --black-2: #1b1d22;
+
+      --red: #d71920;
+      --red-dark: #a90f15;
+
+      --white: #ffffff;
+      --off-white: #fafafa;
+      --soft: #f5f6f8;
+
+      --text: #17191d;
+      --muted: #6b7280;
+
+      --border: #e7e8ec;
+
+      --green: #19a957;
+
+      --radius: 22px;
+
+      --shadow:
+        0 18px 50px rgba(17, 19, 24, 0.08);
+
+      --shadow-hover:
+        0 25px 70px rgba(17, 19, 24, 0.14);
+
+      --max-width: 1200px;
+    }
+
+
+    /* =========================
+       RESET
+    ========================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 40px));
+      margin: auto;
+    }
+
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .topbar {
+      background: var(--black);
+      color: white;
+      font-size: 13px;
+      padding: 9px 0;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar-left {
+      opacity: .9;
+    }
+
+    .topbar-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .topbar a:hover {
+      color: #fff;
+      opacity: .7;
+    }
+
+
+    /* header */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(231,232,236,.8);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    .brand-text {
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      line-height: 1.05;
+      font-size: 17px;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--red);
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      margin-top: 4px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #44474f;
+      transition: .25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--red);
+    }
+
+    .nav-cta {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-call {
+      padding: 11px 17px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .nav-whatsapp {
+      background: var(--green);
+      color: white;
+      padding: 11px 17px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+
+    /* MOBILE MENU BUTTON */
+
+    .menu-btn {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border);
+      background: white;
+      border-radius: 12px;
+      font-size: 23px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      position: relative;
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(8,10,14,.92) 0%,
+          rgba(8,10,14,.72) 48%,
+          rgba(8,10,14,.25) 100%
+        ),
+        url("cover-photo.png") center/cover no-repeat;
+
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 650px;
+      padding: 100px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+
+      padding: 8px 13px;
+      border-radius: 100px;
+
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .6px;
+
+      margin-bottom: 24px;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      background: #45d987;
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.02;
+      letter-spacing: -3px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: #ff3940;
+    }
+
+    .hero-description {
+      color: rgba(255,255,255,.78);
+      max-width: 570px;
+      font-size: 17px;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+
+      padding: 14px 21px;
+      border-radius: 13px;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      transition: .25s ease;
+    }
+
+    .btn-red {
+      background: var(--red);
+      color: white;
+    }
+
+    .btn-red:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--black);
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-price {
+      margin-top: 35px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-price strong {
+      font-family: "Manrope", sans-serif;
+      font-size: 25px;
+    }
+
+    .hero-price span {
+      font-size: 13px;
+      color: rgba(255,255,255,.6);
+    }
+
+
+    /* =========================
+       TRUST BAR
+    ========================= */
+
+    .trust {
+      border-bottom: 1px solid var(--border);
+      background: white;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      padding: 25px 18px;
+      border-right: 1px solid var(--border);
+    }
+
+    .trust-item:last-child {
+      border-right: none;
+    }
+
+    .trust-icon {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      background: var(--soft);
+      border-radius: 12px;
+
+      font-size: 20px;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .trust-item span {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 30px;
+
+      margin-bottom: 45px;
+    }
+
+    .section-label {
+      color: var(--red);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1.8px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .section-head h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.1;
+      letter-spacing: -1.8px;
+    }
+
+    .section-head p {
+      max-width: 480px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+
+    /* =========================
+       FILTERS
+    ========================= */
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-bottom: 35px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--border);
+      background: white;
+      padding: 9px 15px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #555;
+      transition: .2s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--black);
+      color: white;
+      border-color: var(--black);
+    }
+
+
+    /* =========================
+       PRODUCTS
+    ========================= */
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 24px;
+    }
+
+    .product-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: white;
+
+      transition: .3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow-hover);
+      border-color: transparent;
+    }
+
+    .product-image {
+      position: relative;
+      height: 310px;
+      background: var(--soft);
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 28px;
+
+      transition: .4s ease;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.06);
+    }
+
+    .product-badge {
+      position: absolute;
+      left: 17px;
+      top: 17px;
+
+      background: var(--black);
+      color: white;
+
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .7px;
+
+      padding: 7px 10px;
+      border-radius: 8px;
+
+      text-transform: uppercase;
+    }
+
+    .product-body {
+      padding: 23px;
+    }
+
+    .product-category {
+      color: var(--red);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+    }
+
+    .product-title {
+      font-family: "Manrope", sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      margin: 7px 0;
+    }
+
+    .product-description {
+      font-size: 13px;
+      color: var(--muted);
+      min-height: 42px;
+    }
+
+    .product-bottom {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 10px;
+
+      margin-top: 22px;
+      padding-top: 18px;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .price small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .price strong {
+      font-family: "Manrope", sans-serif;
+      font-size: 22px;
+    }
+
+    .product-actions {
+      display: flex;
+      gap: 7px;
+    }
+
+    .icon-btn {
+      width: 42px;
+      height: 42px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 11px;
+      border: 1px solid var(--border);
+      background: white;
+
+      font-size: 17px;
+      transition: .2s;
+    }
+
+    .icon-btn:hover {
+      background: var(--black);
+      color: white;
+    }
+
+    .whatsapp-btn {
+      background: var(--green);
+      color: white;
+      border-color: var(--green);
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background: var(--soft);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 520px;
+      border-radius: 28px;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,0),
+          rgba(0,0,0,.25)
+        ),
+        url("cover-photo.png") center/cover;
+    }
+
+    .about-content h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(32px,4vw,48px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin-bottom: 20px;
+    }
+
+    .about-content > p {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+    }
+
+    .feature {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 17px;
+      border-radius: 14px;
+
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .feature span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 500;
+      margin-top: 3px;
+    }
+
+
+    /* =========================
+       LOCATIONS
+    ========================= */
+
+    .locations {
+      background: white;
+    }
+
+    .locations-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .location-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .map-wrap {
+      height: 330px;
+      background: #eee;
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .location-content {
+      padding: 24px;
+    }
+
+    .location-content h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 22px;
+      margin-bottom: 7px;
+    }
+
+    .location-content p {
+      color: var(--muted);
+      font-size: 13px;
+      min-height: 45px;
+    }
+
+    .location-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .location-phone {
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .location-link {
+      color: var(--red);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding-top: 20px;
+    }
+
+    .cta-box {
+      position: relative;
+      overflow: hidden;
+
+      background: var(--black);
+      color: white;
+
+      border-radius: 28px;
+      padding: 65px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .cta-box::after {
+      content: "";
+      position: absolute;
+
+      width: 300px;
+      height: 300px;
+
+      right: -100px;
+      top: -120px;
+
+      border-radius: 50%;
+
+      border: 60px solid rgba(255,255,255,.04);
+    }
+
+    .cta h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(28px,4vw,43px);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      color: rgba(255,255,255,.65);
+      max-width: 520px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #0b0c0f;
+      color: white;
+      margin-top: 100px;
+    }
+
+    .footer-main {
+      padding: 65px 0 45px;
+
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 60px;
+    }
+
+    .footer-brand {
+      max-width: 380px;
+    }
+
+    .footer-brand img {
+      width: 65px;
+      border-radius: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-brand h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .footer-brand p {
+      color: #858993;
+      font-size: 13px;
+    }
+
+    footer h4 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: #92959e;
+      font-size: 13px;
+      transition: .2s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #22242a;
+      padding: 20px 0;
+
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      color: #737780;
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================= */
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+
+      width: 58px;
+      height: 58px;
+
+      display: grid;
+      place-items: center;
+
+      background: var(--green);
+      color: white;
+
+      border-radius: 50%;
+
+      font-size: 27px;
+
+      box-shadow: 0 10px 30px rgba(0,0,0,.2);
+
+      z-index: 999;
+
+      transition: .25s;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+
+    /* =========================
+       MODAL
+    ========================= */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+
+      background: rgba(0,0,0,.65);
+
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+      padding: 20px;
+
+      z-index: 2000;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-box {
+      width: min(520px, 100%);
+      background: white;
+      border-radius: 24px;
+      padding: 30px;
+      position: relative;
+
+      animation: modalIn .25s ease;
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px) scale(.98);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+
+      width: 36px;
+      height: 36px;
+
+      border: 1px solid var(--border);
+      background: white;
+
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    .modal-box h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 27px;
+      margin-bottom: 7px;
+    }
+
+    .modal-box p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .modal-product {
+      background: var(--soft);
+      padding: 16px;
+      border-radius: 13px;
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
+
+    .modal-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .navbar.mobile-open {
+        position: relative;
+      }
+
+      .navbar.mobile-open .nav-links {
+        display: flex;
+
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        padding: 20px;
+
+        border: 1px solid var(--border);
+        border-radius: 15px;
+
+        box-shadow: var(--shadow);
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 17px;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .trust-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .about-image {
+        min-height: 400px;
+      }
+
+      .locations-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-brand {
+        grid-column: 1/-1;
+      }
+    }
+
+
+    @media (max-width: 600px) {
+
+      .container {
+        width: min(100% - 28px, var(--max-width));
+      }
+
+      .topbar {
+        display: none;
+      }
+
+      .navbar {
+        min-height: 70px;
+      }
+
+      .brand img {
+        width: 45px;
+        height: 45px;
+      }
+
+      .brand-text {
+        font-size: 14px;
+      }
+
+      .hero {
+        min-height: 620px;
+      }
+
+      .hero-content {
+        padding: 80px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .hero-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .section-head {
+        display: block;
+        margin-bottom: 30px;
+      }
+
+      .section-head p {
+        margin-top: 14px;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .trust-item:last-child {
+        border-bottom: none;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-image {
+        height: 300px;
+      }
+
+      .feature-list {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image {
+        min-height: 330px;
+      }
+
+      .map-wrap {
+        height: 280px;
+      }
+
+      .location-footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .cta-box {
+        padding: 35px 25px;
+        display: block;
+      }
+
+      .cta .hero-buttons {
+        margin-top: 25px;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer-brand {
+        grid-column: auto;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .modal-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .floating-whatsapp {
+        width: 54px;
+        height: 54px;
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="topbar">
+
+  <div class="container topbar-inner">
+
+    <div class="topbar-left">
+      Wholesale & Retail • Domestic to Industrial Sewing Machines
+    </div>
+
+    <div class="topbar-right">
+      <a href="tel:+919820758796">
+        Andheri: +91 98207 58796
+      </a>
+
+      <a href="tel:+919082776192">
+        Nallasopara: +91 90827 76192
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="container navbar" id="navbar">
+
+    <a href="#home" class="brand">
+
+      <img src="ksm-logo.jpeg" alt="Kapil Sewing Machine Co. logo">
+
+      <div class="brand-text">
+        KAPIL SEWING MACHINE CO.
+        <span>Wholesale & Retail</span>
+      </div>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+      <a href="#home">Home</a>
+      <a href="#products">Machines</a>
+      <a href="#about">About</a>
+      <a href="#locations">Locations</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <div class="nav-cta">
+
+      <a
+        href="tel:+919820758796"
+        class="nav-call">
+        Call Now
+      </a>
+
+      <a
+        href="https://wa.me/919820758796"
+        target="_blank"
+        class="nav-whatsapp">
+        WhatsApp
+      </a>
+
+    </div>
+
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      ☰
+    </button>
+
+  </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main id="home">
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Trusted Sewing Machine Dealer
+      </div>
+
+
+      <h1>
+        Machines built for
+        <span>serious sewing.</span>
+      </h1>
+
+
+      <p class="hero-description">
+        Quality sewing machines for tailors, boutiques,
+        garment manufacturers and home users —
+        backed by expert guidance and after-sales support.
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a href="#products" class="btn btn-red">
+          Explore Machines →
+        </a>
+
+        <a href="tel:+919820758796" class="btn btn-white">
+          ☎ Call Andheri
+        </a>
+
+      </div>
+
+
+      <div class="hero-price">
+
+        <strong>Starting from ₹8,500</strong>
+
+        <span>
+          Selected machines available
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     TRUST
+========================= -->
+
+<div class="trust">
+
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+
+      <div class="trust-icon">✓</div>
+
+      <div>
+        <strong>Quality Machines</strong>
+        <span>Reliable equipment</span>
+      </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+      <div class="trust-icon">₹</div>
+
+      <div>
+        <strong>Competitive Pricing</strong>
+        <span>Wholesale & retail</span>
+      </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+      <div class="trust-icon">⚙</div>
+
+      <div>
+        <strong>Expert Guidance</strong>
+        <span>Machine demonstrations</span>
+      </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+      <div class="trust-icon">↻</div>
+
+      <div>
+        <strong>After-Sales Support</strong>
+        <span>Support when needed</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section id="products">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="section-label">
+          Our Machines
+        </div>
+
+        <h2>
+          Find the right machine<br>
+          for your work.
+        </h2>
+
+      </div>
+
+      <p>
+        From everyday tailoring to professional garment
+        production, explore our range of selected machines.
+      </p>
+
+    </div>
+
+
+    <!-- FILTERS -->
+
+    <div class="filters">
+
+      <button class="filter-btn active" data-filter="all">
+        All Machines
+      </button>
+
+      <button class="filter-btn" data-filter="ta1">
+        TA1
+      </button>
+
+      <button class="filter-btn" data-filter="industrial">
+        Industrial
+      </button>
+
+      <button class="filter-btn" data-filter="overlock">
+        Overlock
+      </button>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="products-grid" id="productGrid">
+
+
+      <!-- PRODUCT 1 -->
+
+      <article class="product-card" data-category="ta1">
+
+        <div class="product-image">
+
+          <span class="product-badge">
+            Popular
+          </span>
+
+          <img
+            src="usha.jpg"
+            alt="Usha TA1 sewing machine"
+            loading="lazy">
+
+        </div>
+
+        <div class="product-body">
+
+          <div class="product-category">
+            TA1 Machine
+          </div>
+
+          <h3 class="product-title">
+            Usha TA1
+          </h3>
+
+          <p class="product-description">
+            Reliable TA1 sewing machine suitable
+            for regular tailoring work.
+          </p>
+
+          <div class="product-bottom">
+
+            <div class="price">
+              <small>1 Year Warranty</small>
+              <strong>₹8,500</strong>
+            </div>
+
+            <div class="product-actions">
+
+              <button
+                class="icon-btn"
+                onclick="openModal('Usha TA1')">
+                +
+              </button>
+
+              <a
+                class="icon-btn whatsapp-btn"
+                href="https://wa.me/919820758796?text=Hello%20Kapil%20Sewing%20Machine%20Co.,%20I%20am%20interested%20in%20Usha%20TA1."
+                target="_blank">
+                W
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PRODUCT 2 -->
+
+      <article class="product-card" data-category="ta1">
+
+        <div class="product-image">
+
+          <span class="product-badge">
+            Popular
+          </span>
+
+          <img
+            src="singer.jpg"
+            alt="Singer TA1 sewing machine"
+            loading="lazy">
+
+        </div>
+
+        <div class="product-body">
+
+          <div class="product-category">
+            TA1 Machine
+          </div>
+
+          <h3 class="product-title">
+            Singer TA1
+          </h3>
+
+          <p class="product-description">
+            Trusted sewing machine for tailoring
+            and everyday garment work.
+          </p>
+
+          <div class="product-bottom">
+
+            <div class="price">
+              <small>1 Year Warranty</small>
+              <strong>₹8,500</strong>
+            </div>
+
+            <div class="product-actions">
+
+              <button
+                class="icon-btn"
+                onclick="openModal('Singer TA1')">
+                +
+              </button>
+
+              <a
+                class="icon-btn whatsapp-btn"
+                href="https://wa.me/919820758796?text=Hello%20Kapil%20Sewing%20Machine%20Co.,%20I%20am%20interested%20in%20Singer%20TA1."
+                target="_blank">
+                W
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PRODUCT 3 -->
+
+      <article class="product-card" data-category="ta1">
+
+        <div class="product-image">
+
+          <span class="product-badge">
+            2 Year Warranty
+          </span>
+
+          <img
+            src="kapil.jpg"
+            alt="Kapil TA1 sewing machine"
+            loading="lazy">
+
+        </div>
+
+        <div class="product-body">
+
+          <div class="product-category">
+            TA1 Machine
+          </div>
+
+          <h3 class="product-title">
+            Kapil TA1
+          </h3>
+
+          <p class="product-description">
+            Our own-brand TA1 machine designed
+            for dependable daily use.
+          </p>
+
+          <div class="product-bottom">
+
+            <div class="price">
+              <small>2 Year Warranty</small>
+              <strong>₹8,500</strong>
+            </div>
+
+            <div class="product-actions">
+
+              <button
+                class="icon-btn"
+                onclick="openModal('Kapil TA1')">
+                +
+              </button>
+
+              <a
+                class="icon-btn whatsapp-btn"
+                href="https://wa.me/919820758796?text=Hello%20Kapil%20Sewing%20Machine%20Co.,%20I%20am%20interested%20in%20Kapil%20TA1."
+                target="_blank">
+                W
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PRODUCT 4 -->
+
+      <article class="product-card" data-category="industrial">
+
+        <div class="product-image">
+
+          <span class="product-badge">
+            Industrial
+          </span>
+
+          <img
+            src="jack-f6.jpg"
+            alt="Jack F6 industrial sewing machine"
+            loading="lazy">
+
+        </div>
+
+        <div class="product-body">
+
+          <div class="product-category">
+            Industrial
+          </div>
+
+          <h3 class="product-title">
+            Jack F6
+          </h3>
+
+          <p class="product-description">
+            Industrial machine designed for
+            professional tailoring and production.
+          </p>
+
+          <div class="product-bottom">
+
+            <div class="price">
+              <small>Professional Series</small>
+              <strong>₹27,000</strong>
+            </div>
+
+            <div class="product-actions">
+
+              <button
+                class="icon-btn"
+                onclick="openModal('Jack F6')">
+                +
+              </button>
+
+              <a
+                class="icon-btn whatsapp-btn"
+                href="https://wa.me/919082776192?text=Hello%20Kapil%20Sewing%20Machine%20Co.,%20I%20am%20interested%20in%20Jack%20F6."
+                target="_blank">
+                W
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PRODUCT 5 -->
+
+      <article class="product-card" data-category="industrial">
+
+        <div class="product-image">
+
+          <span class="product-badge">
+            Professional
+          </span>
+
+          <img
+            src="jack-a2c.jpg"
+            alt="Jack A2C industrial sewing machine"
+            loading="lazy">
+
+        </div>
+
+        <div class="product-body">
+
+          <div class="product-category">
+            Industrial
+          </div>
+
+          <h3 class="product-title">
+            Jack A2C
+          </h3>
+
+          <p class="product-description">
+            Professional industrial sewing machine
+            built for continuous production.
+          </p>
+
+          <div class="product-bottom">
+
+            <div class="price">
+              <small>Professional Series</small>
+              <strong>₹30,000</strong>
+            </div>
+
+            <div class="product-actions">
+
+              <button
+                class="icon-btn"
+                onclick="openModal('Jack A2C')">
+                +
+              </button>
+
+              <a
+                class="icon-btn whatsapp-btn"
+                href="https://wa.me/919082776192?text=Hello%20Kapil%20Sewing%20Machine%20Co.,%20I%20am%20interested%20in%20Jack%20A2C."
+                target="_blank">
+                W
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PRODUCT 6 -->
+
+      <article class="product-card" data-category="overlock">
+
+        <div class="product-image">
+
+          <span class="product-badge">
+            Overlock
+          </span>
+
+          <img
+            src="kia-4thread.jpg"
+            alt="Kia 4 thread overlock machine"
+            loading="lazy">
+
+        </div>
+
+        <div class="product-body">
+
+          <div class="product-category">
+            Overlock
+          </div>
+
+          <h3 class="product-title">
+            Kia 4-Thread Overlock
+          </h3>
+
+          <p class="product-description">
+            Professional overlock machine for
+            clean and durable garment finishing.
+          </p>
+
+          <div class="product-bottom">
+
+            <div class="price">
+              <small>4-Thread</small>
+              <strong>₹27,000</strong>
+            </div>
+
+            <div class="product-actions">
+
+              <button
+                class="icon-btn"
+                onclick="openModal('Kia 4-Thread Overlock')">
+                +
+              </button>
+
+              <a
+                class="icon-btn whatsapp-btn"
+                href="https://wa.me/919082776192?text=Hello%20Kapil%20Sewing%20Machine%20Co.,%20I%20am%20interested%20in%20Kia%204-Thread%20Overlock."
+                target="_blank">
+                W
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+  <div class="container about-grid">
+
+    <div class="about-image"></div>
+
+
+    <div class="about-content">
+
+      <div class="section-label">
+        About Kapil
+      </div>
+
+      <h2>
+        The right machine makes
+        every stitch better.
+      </h2>
+
+      <p>
+        Kapil Sewing Machine Co. is a wholesale and retail
+        sewing machine dealer serving tailors, boutiques,
+        garment manufacturers and home users.
+      </p>
+
+      <p>
+        We help customers choose the right machine for
+        their work, budget and production requirements —
+        with demonstrations and after-sales support.
+      </p>
+
+
+      <div class="feature-list">
+
+        <div class="feature">
+          Domestic Machines
+          <span>For home & tailoring use</span>
+        </div>
+
+        <div class="feature">
+          Industrial Machines
+          <span>For professional production</span>
+        </div>
+
+        <div class="feature">
+          Overlock Machines
+          <span>Professional finishing</span>
+        </div>
+
+        <div class="feature">
+          Expert Support
+          <span>Guidance & demonstrations</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     LOCATIONS
+========================= -->
+
+<section class="locations" id="locations">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div>
+
+        <div class="section-label">
+          Visit Our Stores
+        </div>
+
+        <h2>
+          Two locations.<br>
+          One trusted name.
+        </h2>
+
+      </div>
+
+      <p>
+        Visit our branches to see machines in person,
+        compare options and get expert guidance.
+      </p>
+
+    </div>
+
+
+    <div class="locations-grid">
+
+
+      <!-- NALLASOPARA -->
+
+      <div class="location-card">
+
+        <div class="map-wrap">
+
+          <iframe
+            src="https://www.google.com/maps?q=Kapil%20Sewing%20Machine%20Co%20Nalasopara&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+        <div class="location-content">
+
+          <h3>Nallasopara East</h3>
+
+          <p>
+            Shop no. 14/15 Deepjyot Apartment,
+            Ambawadi, near Apna Bank,
+            Nalasopara East.
+          </p>
+
+          <div class="location-footer">
+
+            <div class="location-phone">
+              +91 90827 76192
+            </div>
+
+            <a
+              class="location-link"
+              href="https://maps.app.goo.gl/YWDpWqHQKoJwb6WM9"
+              target="_blank">
+              Open in Google Maps →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ANDHERI -->
+
+      <div class="location-card">
+
+        <div class="map-wrap">
+
+          <iframe
+            src="https://www.google.com/maps?q=Kapil%20Sewing%20Machine%20Co%20Andheri%20East%20Mumbai&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+        <div class="location-content">
+
+          <h3>Andheri East</h3>
+
+          <p>
+            Shop no 2 Dubey Building,
+            Old Nagardas Road,
+            Andheri East, Mumbai – 400059.
+          </p>
+
+          <div class="location-footer">
+
+            <div class="location-phone">
+              +91 98207 58796
+            </div>
+
+            <a
+              class="location-link"
+              href="https://share.google/ym0eFGBH0WaN06zIT"
+              target="_blank">
+              Open in Google Maps →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta" id="contact">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <div>
+
+        <h2>
+          Need help choosing<br>
+          the right machine?
+        </h2>
+
+        <p>
+          Tell us what type of sewing work you do.
+          Our team can help you find a suitable machine.
+        </p>
+
+      </div>
+
+
+      <div class="hero-buttons">
+
+        <a
+          href="https://wa.me/919820758796?text=Hello%20Kapil%20Sewing%20Machine%20Co.,%20I%20need%20help%20choosing%20a%20sewing%20machine."
+          target="_blank"
+          class="btn btn-red">
+          WhatsApp Us
+        </a>
+
+        <a
+          href="tel:+919820758796"
+          class="btn btn-white">
+          Call Now
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container footer-main">
+
+
+    <div class="footer-brand">
+
+      <img
+        src="ksm-logo.jpeg"
+        alt="Kapil Sewing Machine Co.">
+
+      <h3>
+        Kapil Sewing Machine Co.
+      </h3>
+
+      <p>
+        Wholesale & retail sewing machines for
+        professionals, businesses and home users.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        Quick Links
+      </h4>
+
+      <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#products">Machines</a>
+        <a href="#about">About Us</a>
+        <a href="#locations">Our Locations</a>
+
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        Contact
+      </h4>
+
+      <div class="footer-links">
+
+        <a href="tel:+919820758796">
+          Andheri: +91 98207 58796
+        </a>
+
+        <a href="tel:+919082776192">
+          Nallasopara: +91 90827 76192
+        </a>
+
+        <a href="mailto:kapilsewingmachineco@gmail.com">
+          kapilsewingmachineco@gmail.com
+        </a>
+
+        <a
+          href="https://instagram.com/kapilsewingmachineco"
+          target="_blank">
+          Instagram
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © <span id="year"></span>
+      Kapil Sewing Machine Co. All rights reserved.
+    </span>
+
+    <span>
+      Quality • Value • Support
+    </span>
+
+  </div>
+
+</footer>
+
+
+
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+
+<a
+  href="https://wa.me/919820758796?text=Hello%20Kapil%20Sewing%20Machine%20Co."
+  target="_blank"
+  class="floating-whatsapp"
+  aria-label="Chat on WhatsApp">
+
+  W
+
+</a>
+
+
+
+<!-- =========================
+     PRODUCT MODAL
+========================= -->
+
+<div class="modal" id="productModal">
+
+  <div class="modal-box">
+
+    <button
+      class="modal-close"
+      onclick="closeModal()">
+      ×
+    </button>
+
+    <h3>
+      Enquire About Machine
+    </h3>
+
+    <p>
+      Contact us for availability, current pricing,
+      demonstration and delivery details.
+    </p>
+
+    <div
+      class="modal-product"
+      id="modalProduct">
+      Product
+    </div>
+
+    <div class="modal-actions">
+
+      <a
+        id="modalWhatsApp"
+        href="#"
+        target="_blank"
+        class="btn btn-red">
+        WhatsApp Enquiry
+      </a>
+
+      <a
+        href="tel:+919820758796"
+        class="btn"
+        style="border:1px solid #e7e8ec;">
+        Call Now
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<script>
+
+  /* =========================
+     MOBILE MENU
+  ========================= */
+
+  const navbar = document.getElementById("navbar");
+  const menuBtn = document.getElementById("menuBtn");
+
+  menuBtn.addEventListener("click", () => {
+
+    navbar.classList.toggle("mobile-open");
+
+    menuBtn.textContent =
+      navbar.classList.contains("mobile-open")
+        ? "×"
+        : "☰";
+
+  });
+
+
+  document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+      navbar.classList.remove("mobile-open");
+
+      menuBtn.textContent = "☰";
+
+    });
+
+  });
+
+
+
+  /* =========================
+     PRODUCT FILTER
+  ========================= */
+
+  const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+  const products =
+    document.querySelectorAll(".product-card");
+
+
+  filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+      filterButtons.forEach(btn =>
+        btn.classList.remove("active")
+      );
+
+      button.classList.add("active");
+
+      const filter =
+        button.getAttribute("data-filter");
+
+
+      products.forEach(product => {
+
+        const category =
+          product.getAttribute("data-category");
+
+        if (
+          filter === "all" ||
+          category === filter
+        ) {
+
+          product.style.display = "";
+
+        } else {
+
+          product.style.display = "none";
+
+        }
+
+      });
+
+    });
+
+  });
+
+
+
+  /* =========================
+     MODAL
+  ========================= */
+
+  const modal =
+    document.getElementById("productModal");
+
+  const modalProduct =
+    document.getElementById("modalProduct");
+
+  const modalWhatsApp =
+    document.getElementById("modalWhatsApp");
+
+
+  function openModal(productName) {
+
+    modalProduct.textContent = productName;
+
+    const message =
+      `Hello Kapil Sewing Machine Co., I am interested in ${productName}. Please share more details, availability and current price.`;
+
+    modalWhatsApp.href =
+      "https://wa.me/919820758796?text=" +
+      encodeURIComponent(message);
+
+    modal.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+  }
+
+
+  function closeModal() {
+
+    modal.classList.remove("active");
+
+    document.body.style.overflow = "";
+
+  }
+
+
+  modal.addEventListener("click", (event) => {
+
+    if (event.target === modal) {
+      closeModal();
+    }
+
+  });
+
+
+  document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape") {
+      closeModal();
+    }
+
+  });
+
+
+
+  /* =========================
+     YEAR
+  ========================= */
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
